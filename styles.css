@@ -131,9 +131,39 @@ img {
 .cards h3,
 .gallery h3,
 .contact h3,
-.info-strip h3 {
+.info-strip h3,
+.universities h3 {
   margin-top: 0;
   font-size: clamp(1.3rem, 3vw, 1.9rem);
+}
+
+.section-intro {
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.grid-uni {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.uni-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.uni-card h4 {
+  margin: 0 0 0.5rem;
+  color: #0f172a;
+}
+
+.uni-card p {
+  margin: 0.4rem 0;
+  color: #374151;
 }
 
 .grid-3 {
@@ -256,6 +286,10 @@ body[data-current-lang='zh'] [data-lang='en'] {
   }
 
   .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-uni {
     grid-template-columns: 1fr;
   }
 
